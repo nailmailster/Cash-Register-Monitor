@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000033">
+
+    <TextView
+        android:id="@+id/tvTotalSumLeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/orbitron"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#CCCCCC"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="15"
+        android:shadowDx="7"
+        android:shadowDy="7"
+        android:textSize="60sp"
+        android:onClick="onClick"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/goldbar"
+        android:layout_weight="5"/>
+
+    <TextView
+        android:id="@+id/tvTotalSumLooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/orbitron"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000033"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="15"
+        android:shadowDx="7"
+        android:shadowDy="7"
+        android:textSize="60sp"
+        android:onClick="onClick"/>
+</LinearLayout>

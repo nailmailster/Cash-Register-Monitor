@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".InfoActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ВЧЕРА"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="15 ноября"
+            android:layout_weight="10"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ЗАВТРА"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1000"
+        android:layout_marginBottom="4dp">
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTotalSum1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/orbitron"
+            android:gravity="center"
+            android:text="СУММА"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTotalSum2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#f1eaa6"
+            android:fontFamily="@font/orbitron"
+            android:gravity="center"
+            android:text="СУММА"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvTotalSum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CCCCCC"
+            android:fontFamily="@font/orbitron"
+            android:gravity="end"
+            android:text="СУММА"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

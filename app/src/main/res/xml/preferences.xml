@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Заставка">
+        <ListPreference
+            android:title="Формат торговли:"
+            android:key="listPref"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Хостинг">
+        <EditTextPreference
+            android:title="Адрес хоста:"
+            android:key="hostAddressPref"
+            android:summary="Адрес хостинга"/>
+        <CheckBoxPreference
+            android:title="Обновить архив транзакций"
+            android:key="updateDBPref"
+            android:summaryOff="Не обновлять архив"
+            android:summaryOn="Архив будет обновлен"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Заголовок">
+        <EditTextPreference
+            android:title="Заголовок окна:"
+            android:key="titlePref"
+            android:summary="Ювелирная Коллекция"/>
+    </PreferenceCategory>
+</PreferenceScreen>
